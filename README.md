@@ -1,2 +1,2 @@
 # gcputils
-Using Google Cloud Platform services in Dart.
+Using Google Cloud Platform services in Dart language
