@@ -2,10 +2,9 @@
 Using Google Cloud Platform services in Dart language.
 
 ## Authentication
-
-### Using a service account
 Source: https://github.com/fpllcr/gcputils/blob/master/lib/auth_utils.dart
 
+### Using a service account
 Use **getClientFromServiceAccount** in order to get an AutorefreshingAuthClient from a specific service account. You can get the GCP service account credentials from https://console.cloud.google.com/iam-admin/serviceaccounts.
 
 ~~~dart
@@ -31,6 +30,7 @@ final storageApi = gcs.StorageApi(client);
 *See a complete example: https://github.com/fpllcr/gcputils/blob/master/example/serviceAccount.dart*
 
 ## Pub/Sub
+Source: https://github.com/fpllcr/gcputils/blob/master/lib/pubsub_utils.dart
 
 ### Publishing messages
 Publish a message in a Pub/Sub topic.
