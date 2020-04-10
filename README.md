@@ -33,7 +33,7 @@ final storageApi = gcs.StorageApi(client);
 Source: https://github.com/fpllcr/gcputils/blob/master/lib/pubsub_utils.dart
 
 ### Publishing messages
-Publish a message in a Pub/Sub topic.
+Publish a message in a Pub/Sub topic. At least one of *data* or *attributes* must be specified.
 
 ~~~dart
   pubsub_utils.publishPubsubMessage(client, project, topic,
