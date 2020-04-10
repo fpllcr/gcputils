@@ -8,7 +8,7 @@ Source: https://github.com/fpllcr/gcputils/blob/master/lib/auth_utils.dart
 
 Use **getClientFromServiceAccount** in order to get an AutorefreshingAuthClient from a specific service account. You can get the GCP service account credentials from https://console.cloud.google.com/iam-admin/serviceaccounts.
 
-~~~
+~~~dart
 import 'package:gcputils/auth_utils.dart' show getClientFromServiceAccount;
 import 'package:googleapis/storage/v1.dart' as gcs;
 
