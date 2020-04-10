@@ -28,4 +28,18 @@ final client = await getClientFromServiceAccount(credentials, scopes);
 final storageApi = gcs.StorageApi(client);
 ~~~
 
-*See an example: https://github.com/fpllcr/gcputils/blob/master/examples/serviceAccount.dart*
+*See a complete example: https://github.com/fpllcr/gcputils/blob/master/example/serviceAccount.dart*
+
+## Pub/Sub
+
+### Publishing messages
+Publish a message in a Pub/Sub topic.
+
+~~~dart
+  pubsub_utils.publishPubsubMessage(client, project, topic,
+    data: "This is a test message",
+    attributes: {"publisher": "fpllcr", "timestamp": DateTime.now().toString()}
+  );
+~~~
+
+*See a complete example: https://github.com/fpllcr/gcputils/blob/master/example/pubsub_publish.dart*
