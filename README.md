@@ -30,7 +30,7 @@ final storageApi = gcs.StorageApi(client);
 *See a complete example: https://github.com/fpllcr/gcputils/blob/master/example/serviceAccount.dart*
 
 ## Pub/Sub
-What is Pub/Sub: https://cloud.google.com/pubsub/docs/overview
+Pub/Sub docs: https://cloud.google.com/pubsub/docs/overview
 
 Source: https://github.com/fpllcr/gcputils/blob/master/lib/pubsub_utils.dart
 
