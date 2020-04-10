@@ -1,4 +1,9 @@
+import 'package:googleapis/pubsub/v1.dart' show PubsubApi;
+import 'package:googleapis/storage/v1.dart' show StorageApi;
 import 'package:googleapis_auth/auth_io.dart' as auth;
+
+const PUBSUB_SCOPE = PubsubApi.PubsubScope;
+const STORAGE_READONLY_SCOPE = StorageApi.DevstorageReadOnlyScope;
 
 /// Gets service account client from credentials.
 /// 
