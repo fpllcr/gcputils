@@ -26,17 +26,11 @@ pubsub.PublishResponse publishPubsubMessage(AuthClient client, String project, S
   
   final pubsubApi = pubsub.PubsubApi(client);
 
-  Map<String,String> encodedAttrs = {};
-
-  for (var attr in attributes.keys) {
-    encodedAttrs[attr] = base64Encode(utf8.encode(attributes[attr]));
-  }
-
   final Map<String,dynamic> message = {
     'messages': [
       {
         'data': base64Encode(utf8.encode(data)),
-        'attributes': encodedAttrs
+        'attributes': attributes
       }
     ]
   };
